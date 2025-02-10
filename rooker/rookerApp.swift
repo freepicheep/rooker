@@ -12,7 +12,10 @@ import SwiftData
 struct rookerApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Player.self,
+            Team.self,
+            Round.self,
+            Game.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
